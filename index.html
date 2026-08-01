@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>La Celestina</title>
+
+<link rel="stylesheet" href="assets/css/variables.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/layout.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/product.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="header">
+
+        <a href="#" class="logo">
+
+            <img src="assets/images/logo.png" alt="La Celestina">
+
+        </a>
+
+        <div class="search">
+
+            <input
+    type="text"
+    id="busqueda"
+    placeholder="Buscar joyas...">
+
+        </div>
+
+    </div>
+
+</header>
+
+<main>
+
+<section class="categorias">
+
+    <button data-categoria="Todos">Todos</button>
+    <button data-categoria="Topos">Topos</button>
+    <button data-categoria="Aretes">Aretes</button>
+    <button data-categoria="Candongas">Candongas</button>
+    <button data-categoria="Pulseras">Pulseras</button>
+    <button data-categoria="Anillos">Anillos</button>
+    <button data-categoria="Collares">Collares</button>
+
+</section>
+
+<section id="productos">
+
+</section>
+
+</main>
+
+<div id="overlay-container"></div>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/state.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="assets/js/sheets.js"></script>
+<script src="assets/js/product.js"></script>
+<script src="assets/js/catalog.js"></script>
+<script src="assets/js/filters.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/categories.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

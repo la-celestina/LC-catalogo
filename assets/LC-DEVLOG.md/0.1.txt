@@ -1,0 +1,53 @@
+# LC-DEVLOG
+
+Proyecto: Catálogo Digital La Celestina Gold
+
+---
+
+# Versión 0.1
+
+- Estructura inicial.
+- Conexión con Google Sheets.
+- Tarjetas de producto.
+- Buscador.
+- Categorías.
+
+---
+
+# Versión 0.2
+
+- Modal de producto.
+- Imagen ampliada.
+- Corrección de carga de datos.
+
+---
+
+# Versión 0.3
+
+- Organización del proyecto.
+- PapaParse para lectura del CSV.
+- Corrección de precios.
+- Nueva estructura de carpetas para imágenes.
+
+---
+
+# Versión 0.4
+
+- Una carpeta por producto.
+- Galería de imágenes.
+- Imagen principal.
+- Miniaturas.
+- Descripción larga.
+- Ficha técnica.
+- Preparación para WhatsApp.
+
+---
+
+## Pendiente (Versión 1.0)
+
+- [ ] Reorganizar archivos JavaScript.
+- [ ] Reorganizar CSS.
+- [ ] Botón inteligente de WhatsApp.
+- [ ] Galería automática ilimitada.
+- [ ] Zoom.
+- [ ] Optimización para móviles.

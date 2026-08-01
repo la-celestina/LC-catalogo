@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:Segoe UI, Arial, sans-serif;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+button{
+
+    font-family:inherit;
+
+}
+
+input{
+
+    font-family:inherit;
+
+}

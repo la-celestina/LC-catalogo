@@ -1,0 +1,21 @@
+:root{
+
+    --gold:#C9A35B;
+    --gold-dark:#A97E2F;
+
+    --black:#171717;
+    --white:#ffffff;
+
+    --bg:#F8F7F5;
+
+    --text:#2D2D2D;
+
+    --border:#ECE9E3;
+
+    --shadow:0 10px 35px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+    --container:1280px;
+
+}

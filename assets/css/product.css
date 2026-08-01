@@ -1,0 +1,601 @@
+/*
+========================================
+LC CATALOG
+product.css
+
+Versión 1.0 Base
+
+Ficha del producto
+
+========================================
+*/
+
+
+/*========================================
+OVERLAY
+========================================*/
+
+.modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.60);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+    z-index:9999;
+
+}
+
+
+/*========================================
+MODAL
+========================================*/
+
+.modal{
+
+    background:#fff;
+
+    width:min(1100px,95vw);
+
+    height:min(90vh,820px);
+
+    border-radius:24px;
+
+    display:grid;
+
+    grid-template-columns:420px 1fr;
+
+    gap:36px;
+
+    padding:36px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    box-shadow:0 25px 70px rgba(0,0,0,.25);
+
+}
+
+
+/*========================================
+BOTÓN CERRAR
+========================================*/
+
+.cerrar-modal{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#f5f5f5;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    transition:.25s;
+
+}
+
+.cerrar-modal:hover{
+
+    background:var(--gold);
+
+    color:white;
+
+}
+
+/*========================================
+GALERÍA
+========================================*/
+
+.modal-imagen{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+
+/*========================================
+IMAGEN PRINCIPAL
+========================================*/
+
+#imagenPrincipal{
+
+    width:100%;
+
+    aspect-ratio:1/1;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    display:block;
+
+    transition:opacity .25s ease;
+
+}
+
+
+/*========================================
+MINIATURAS
+========================================*/
+
+.miniaturas{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+}
+
+
+/*========================================
+CADA MINIATURA
+========================================*/
+
+.miniatura{
+
+    width:56px;
+
+    height:56px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    border:2px solid transparent;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    flex-shrink:0;
+
+}
+
+
+.miniatura:hover{
+
+    transform:translateY(-2px);
+
+    border-color:rgba(201,161,90,.45);
+
+}
+
+
+.miniatura.activa{
+
+    border-color:var(--gold);
+
+    box-shadow:0 4px 12px rgba(201,161,90,.25);
+
+}
+
+/*========================================
+INFORMACIÓN DEL PRODUCTO
+========================================*/
+
+.modal-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    overflow-y:scroll;
+
+    overflow-x:hidden;
+
+    padding-right:12px;
+
+    min-height:0;
+
+}
+
+
+/*========================================
+TÍTULO
+========================================*/
+
+.modal-info h2{
+
+    font-size:2.2rem;
+
+    font-weight:700;
+
+    color:#333;
+
+    margin-bottom:10px;
+
+}
+
+
+/*========================================
+CÓDIGO
+========================================*/
+
+.codigo{
+
+    color:#8a8a8a;
+
+    font-size:.95rem;
+
+    margin-bottom:22px;
+
+}
+
+
+/*========================================
+DESCRIPCIÓN
+========================================*/
+
+.descripcion{
+
+    color:#444;
+
+    line-height:1.85;
+
+    font-size:.98rem;
+
+    margin-bottom:30px;
+
+}
+
+
+/*========================================
+FICHA TÉCNICA
+========================================*/
+
+.ficha-tecnica{
+
+    border-top:1px solid #ececec;
+
+    border-bottom:1px solid #ececec;
+
+    margin-bottom:28px;
+
+}
+
+
+.ficha-tecnica div{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:14px 0;
+
+    border-bottom:1px solid #f3f3f3;
+
+}
+
+
+.ficha-tecnica div:last-child{
+
+    border-bottom:none;
+
+}
+
+
+.ficha-tecnica strong{
+
+    color:#444;
+
+    font-weight:600;
+
+}
+
+
+.ficha-tecnica span{
+
+    color:#777;
+
+    text-align:right;
+
+}
+
+/*========================================
+PRECIO
+========================================*/
+
+.precio{
+
+    margin-top:10px;
+
+    margin-bottom:20px;
+
+    font-size:2.2rem;
+
+    font-weight:700;
+
+    color:var(--gold);
+
+}
+
+
+
+/*========================================
+BOTÓN WHATSAPP Y COMPARTIR
+========================================*/
+
+.btn-whatsapp{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#25D366;
+
+    color:#fff;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    box-shadow:0 10px 25px rgba(37,211,102,.20);
+
+}
+
+.btn-whatsapp:hover{
+
+    background:#1EBE5D;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+/*========================================
+SCROLL
+========================================*/
+
+.modal-info::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.modal-info::-webkit-scrollbar-track{
+
+    background:#f4f4f4;
+
+    border-radius:10px;
+
+}
+
+.modal-info::-webkit-scrollbar-thumb{
+
+    background:#d6d6d6;
+
+    border-radius:10px;
+
+}
+
+.modal-info::-webkit-scrollbar-thumb:hover{
+
+    background:#bdbdbd;
+
+}
+
+
+
+/*========================================
+RESPONSIVE
+========================================*/
+
+@media (max-width:900px){
+
+    .modal{
+
+        grid-template-columns:1fr;
+
+        width:95vw;
+
+        height:92vh;
+
+        padding:24px;
+
+        gap:24px;
+
+    }
+
+    .modal-imagen{
+
+        width:100%;
+
+    }
+
+    #imagenPrincipal{
+
+        max-height:320px;
+
+    }
+
+    .modal-info{
+
+        padding-right:4px;
+
+    }
+
+    .modal-info h2{
+
+        font-size:1.8rem;
+
+    }
+
+    .precio{
+
+        font-size:1.8rem;
+
+    }
+
+}
+
+/*========================================
+LOGO MODAL
+========================================*/
+
+.logo-modal{
+
+    margin-top:10px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.logo-modal img{
+
+    width:170px;
+
+    opacity:.95;
+
+    transition:.30s;
+
+}
+
+.logo-modal img:hover{
+
+    opacity:1;
+
+}
+
+/*========================================
+ACCIONES PRODUCTO
+========================================*/
+
+.acciones-producto{
+
+    display:flex;
+
+    gap:8px;
+
+    margin-top:10px;
+
+}
+
+.btn-secundario{
+
+    flex:1;
+
+    padding:10px 12px;
+
+    border:1px solid #d9c3a0;
+
+    border:1px solid #eee4d2;
+
+    background:#faf8f4;
+
+    color:#7d5b1e;
+
+    cursor:pointer;
+
+    font-size:.85rem;
+
+    font-weight:500;
+
+    transition:.25s;
+
+}
+
+.btn-secundario:hover{
+
+    background:#faf4ea;
+
+}
+
+/*========================================
+TOAST
+========================================*/
+
+.toast{
+
+    position:fixed;
+
+    left:50%;
+
+    bottom:30px;
+
+    transform:translateX(-50%) translateY(20px);
+
+    background:#333;
+
+    color:#fff;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    font-size:.90rem;
+
+    font-weight:500;
+
+    opacity:0;
+
+    transition:.30s;
+
+    z-index:10000;
+
+    pointer-events:none;
+
+}
+
+.toast.mostrar{
+
+    opacity:1;
+
+    transform:translateX(-50%) translateY(0);
+
+}
